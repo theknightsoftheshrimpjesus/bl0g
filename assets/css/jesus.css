@@ -4,7 +4,7 @@ body {
     font-size: 16px;
     color: #222222; /* main text color */
     line-height: 1.6;
-    background-color: #ffffff; /* page background */
+    background-color: #383838; /* page background */
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -14,18 +14,20 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /* ===== HEADERS ===== */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
-    color: #1a73e8; /* header color */
+    color: #d4e371; /* header color */
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
 /* ===== LINKS ===== */
 a {
-    color: #ff5722; /* link color */
-    text-decoration: none;
+    color: #d4e371;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;  /* thickness of underline */
+    text-decoration-color: #d4e371;  /* underline color matches text */
 }
 a:hover {
-    color: #e64a19;
+    color: #7c71E3;
     text-decoration: underline;
 }
 
