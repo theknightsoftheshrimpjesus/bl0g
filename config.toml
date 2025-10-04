@@ -1,0 +1,32 @@
+baseURL = "https://theknightsoftheshrimpjesus.netlify.app/"
+languageCode = "en-us"
+title = "The Knights of the Shrimp Jesus"
+theme = "archie"
+copyright = "© Athul"
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+[params]
+	mode="auto"
+	useCDN=false
+	subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/athul/archie)"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/athul/archie"
+
+[[menu.main]]
+name = "home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "about"
+url = "/about"
+weight = 3
