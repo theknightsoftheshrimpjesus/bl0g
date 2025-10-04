@@ -1,0 +1,7 @@
+{{- range $index, $key := .Site.Params.Social -}} {{- if hasPrefix $key.icon "simple:" -}}
+{{- else -}}
+{{ template "feathericon" (dict "Icon" $key.icon "UseCDN" .Site.Params.useCDN) }}
+{{- end -}}
+{{- end -}}
+{{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} Archie Theme | Built with Hugo
+{{ if not hugo.IsServer }} {{ template "_internal/google_analytics.html" . }} {{ end }} 
