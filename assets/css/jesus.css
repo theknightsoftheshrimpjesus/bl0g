@@ -7,6 +7,10 @@ body {
     background-color: #ffffff; /* page background */
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-family: 'Helvetica Neue', Arial, sans-serif !important;
+}
+
 /* ===== HEADERS ===== */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
