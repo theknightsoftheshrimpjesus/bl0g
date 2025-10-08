@@ -9,13 +9,7 @@ pygmentscodefencesguesssyntax = true
 [params]
 	mode="auto"
 	useCDN=false
-	subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/athul/archie)"
 	customcss = ["css/jesus.css"]
-
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/athul/archie"
 
 [[menu.main]]
 name = "home"
@@ -31,4 +25,5 @@ weight = 2
 name = "about"
 url = "/about"
 weight = 3
+
 
