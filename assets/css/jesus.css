@@ -1,79 +1,55 @@
-/* ===== BODY & TEXT ===== */
+/* ===== GLOBAL FONT & COLORS ===== */
 body {
-    font-family: 'Fira Code', monospace;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
     font-size: 16px;
     color: #efeee2;
     line-height: 1.6;
     background-color: #303122;
+    margin: 0;
+    padding: 0;
 }
 
 /* ===== HEADERS ===== */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
     color: #efeee2;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
-/* Headings that contain links */
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    font-family: 'JetBrains Mono', monospace !important;
+/* ===== LINKS ===== */
+a {
     color: #eec35e;
-    text-decoration: none;
-}
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    color: #7c71e3;
     text-decoration: underline;
     text-decoration-thickness: 3px;
+    text-decoration-color: #eec35e;
 }
-
-/* ===== FORCE LINK COLOR & UNDERLINE STYLE ===== */
-a {
-    color: #eec35e !important;
-    text-decoration: underline !important;
-    text-decoration-thickness: 3px !important;
-    text-decoration-color: #eec35e !important;
-
-    border-bottom: none !important;       /* remove old red underline */
-    box-shadow: none !important;          /* some themes fake underlines this way */
-}
-
 a:hover {
-    color: #7c71e3 !important;
-    text-decoration-color: #7c71e3 !important;
-    border-bottom: none !important;
+    color: #efeee2;
+    text-decoration-color: #efeee2;
 }
-
 
 /* ===== NAVIGATION MENU ===== */
 nav a {
-    font-family: 'JetBrains Mono', monospace;
     color: #eec35e;
-    text-decoration: none;
 }
 nav a:hover {
-    color: #7c71e3;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+    color: #efeee2;
 }
 
 /* ===== FOOTER ===== */
 footer {
     font-size: 0.9em;
     color: #efeee2;
-    font-family: 'Fira Code', monospace;
-    border-top: 1px solid #eec35e22; /* faint divider */
-    padding-top: 0.5em;
 }
 
 /* ===== CODE BLOCKS ===== */
 pre, code {
-    font-family: 'Fira Code', monospace;
-    background-color: #252519;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    background-color: #3b3c2c;
     color: #efeee2;
     padding: 4px 6px;
     border-radius: 4px;
-    border: 1px solid #3b3a2a;
 }
 
 /* ===== BLOCKQUOTE ===== */
@@ -82,25 +58,23 @@ blockquote {
     padding-left: 1em;
     color: #efeee2;
     font-style: italic;
-    background-color: #3a3929;
+    background-color: #3b3c2c;
 }
 
-/* ===== POST PAGE LAYOUT ===== */
-.single .content, /* individual post pages */
+/* ===== CONTENT WIDTH ===== */
+.single .content,
 .post-single .content,
 .page .content,
-.main, /* general content container fallback */
+.main,
 article {
-    max-width: 800px;          /* width of text column */
-    margin: 3em auto;          /* centers it and adds top/bottom space */
-    padding: 0 2em;            /* inner padding so text doesn’t hug edges */
-    background-color: transparent; /* keep your theme background visible */
+    max-width: 800px;
+    margin: 3em auto;
+    padding: 0 2em;
+    background-color: transparent;
 }
 
-/* Optional: tweak line spacing and paragraph spacing for nicer reading */
 .single .content p,
 .post-single .content p {
     line-height: 1.75;
     margin-bottom: 1.2em;
 }
-
