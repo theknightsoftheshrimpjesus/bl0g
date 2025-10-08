@@ -85,3 +85,22 @@ blockquote {
     background-color: #3a3929;
 }
 
+/* ===== POST PAGE LAYOUT ===== */
+.single .content, /* individual post pages */
+.post-single .content,
+.page .content,
+.main, /* general content container fallback */
+article {
+    max-width: 800px;          /* width of text column */
+    margin: 3em auto;          /* centers it and adds top/bottom space */
+    padding: 0 2em;            /* inner padding so text doesn’t hug edges */
+    background-color: transparent; /* keep your theme background visible */
+}
+
+/* Optional: tweak line spacing and paragraph spacing for nicer reading */
+.single .content p,
+.post-single .content p {
+    line-height: 1.75;
+    margin-bottom: 1.2em;
+}
+
